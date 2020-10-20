@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Budget app</title>
+</head>
+
+<body>
+
+    <div class="flex-image">
+        <div class="flex-budget-all">
+            <div class="budget-title">Available Budget in September 2020:</div>
+            <div class="budget-value">0.00</div>
+            <div class="flexbox-income">
+                <div class="income-text">INCOME</div>
+                <div class="income-value" id="value">+0.00</div>
+            </div>
+            <div class="flexbox-expenses">
+                <div class="expenses-text">EXPENSES</div>
+                <div class="expenses-value" id="expense">-0.00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add">
+        <div class="flex-add">
+            <select class="add-type">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+            </select>
+            <input type="text" class="add-description" placeholder="Add description"></input>
+            <input type="number" class="add-value" placeholder="Value"></input>
+            <button class="add-btn">
+                <i class="ion-ios-checkmark-outline"></i>
+            </button>
+        </div>
+        <div class="container-clearfix">
+            <div class="income">
+                <h2 class="income-title">INCOME</h2>
+                <div class="income-list">
+
+                </div>
+            </div>
+            <div class="expenses">
+                <h2 class="expenses-title">EXPENSES</h2>
+                <div class="expenses-list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
